@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:padding="20dp"
+        tools:layout_editor_absoluteY="1dp">
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/starting"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+        <EditText
+            android:id="@+id/editTextGuess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/edit_guess"
+            android:importantForAutofill="no" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+        <Button
+            android:id="@+id/buttonGuess"
+            android:text="@string/button_guess"
+            android:textSize="20sp"
+            android:onClick="guessClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_register"
+            android:importantForAutofill="no" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+        <Button
+            android:id="@+id/buttonAdd"
+            android:text="@string/button_add"
+            android:textSize="20sp"
+            android:onClick="guessClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/chemical"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
